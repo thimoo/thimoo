@@ -4,7 +4,7 @@ import './Portfolio.css';
 class Portfolio extends Component {
   render() {
     return (
-      <div className="Portfolio">
+      <div id="Portfolio" className="Portfolio">
         my Portfolio
       </div>
     );

@@ -1,3 +1,33 @@
+@import '../shared.scss';
+
 .Footer {
-  background-color: yellow;
+  padding: $default-top-margin*2
+           $default-right-margin
+           $default-bottom-margin*2
+           $default-left-margin;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Footer-Content {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+.Footer-Content a {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+.Footer-Content svg {
+  height: 2em;
+}
+.Footer-Content svg path {
+  fill: $black;
+  transition: fill .4s;
+}
+.Footer-Content svg:hover path {
+  fill: $orange;
 }

@@ -1,3 +1,99 @@
+@import "../shared.scss";
+
 .Header {
-  background-color: red;
+  padding: $default-top-margin
+           $default-right-margin
+           $default-bottom-margin
+           $default-left-margin;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.Header-Content {
+  background-color: $black;
+  color: $white;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.Header-Top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 50px 0 50px;
+}
+.Header-Top__Logo {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+.Header-Top__Logo img {
+  height: 3em;
+}
+.Header-Top__Menu {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+.Header-Top__Menu img {
+  height: 1em;
+}
+
+.Header-Title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Header-Title__Intro {
+  font-weight: 300;
+  font-size: 2em;
+  color: $gray;
+  margin-bottom: $default-bottom-margin*3;
+}
+.Header-Title__Intro span {
+  color: $white;
+}
+.Header-Title__Baseline {
+  @include title();
+}
+.Header-Title__Baseline span {
+  @include accent-title();
+}
+.Header-Title__Clock {
+  margin-top: $default-top-margin*6;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+.Header-Title__Clock img {
+  height: 8em;
+}
+
+.Header-Bottom {
+  display: flex;
+  justify-content: center;
+  padding: 0 50px 40px 50px;
+}
+.Header-Bottom__Arrow {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  cursor: pointer;
+  animation: move-arrow 2s infinite;
+}
+.Header-Bottom__Arrow img {
+  height: 1em;
+}
+
+@keyframes move-arrow {
+  0%   { transform: translateY(0); }
+  25%  { transform: translateY(-10px); }
+  50%  { transform: translateY(0); }
+  // 100% {}
 }
