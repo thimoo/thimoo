@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ScrollAnim, { Link } from 'rc-scroll-anim';
 import logo from '../assets/logo-white.svg';
 import menu from '../assets/menu.svg';
 import clock from '../assets/clock.svg';
@@ -25,7 +26,7 @@ class Header extends Component {
           </div>
           <div className="Header-Bottom">
             <div className="Header-Bottom__Arrow">
-              <a href="#"><img src={arrow} alt="Arrow" /></a>
+              <Link to="Portfolio"><img src={arrow} alt="Arrow" /></Link>
             </div>
           </div>
         </div>

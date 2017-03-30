@@ -1,3 +1,16 @@
+@import "../shared.scss";
+
 .Portfolio {
-  background-color: blue;
+  padding: $default-top-margin
+           $default-right-margin
+           $default-bottom-margin
+           $default-left-margin;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.Portfolio-Content {
+  color: $black;
+  height: 100%;
+  box-sizing: border-box;
 }
