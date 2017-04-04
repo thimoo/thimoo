@@ -4,19 +4,27 @@ import logo from '../assets/logo-white.svg';
 import menu from '../assets/menu.svg';
 import clock from '../assets/clock.svg';
 import arrow from '../assets/arrow.svg';
+import Menu from '../menu/Menu.js';
 import './Header.css';
 
 class Header extends Component {
   render() {
     return (
-      <section className="Header">
+      <section id="Home" className="Header">
+        <Menu isOpen={this.props.isMenuActive} toggleMenu={this.props.toggleMenu}></Menu>
         <div className="Header-Content">
           <div className="Header-Top">
             <div className="Header-Top__Logo">
-              <a href="/"><img src={logo} alt="Logo" /></a>
+              <Link to="Home"><img src={logo} alt="Logo" /></Link>
             </div>
-            <div className="Header-Top__Menu">
-              <a href="#"><img src={menu} alt="Logo" /></a>
+            <div className={"Header-Top__Menu" + (this.props.isMenuActive ? " active" : "")} onClick={this.props.toggleMenu}>
+              <a href="#">
+                <div className={"Menu-Button" + (this.props.isMenuActive ? " active" : "")}>
+                  <span className="Menu-Button__Top"></span>
+                  <span className="Menu-Button__Middle"></span>
+                  <span className="Menu-Button__Bottom"></span>
+                </div>
+              </a>
             </div>
           </div>
           <div className="Header-Title">

@@ -1,0 +1,63 @@
+@import "../shared.scss";
+
+body.menu-open {
+  overflow: hidden;
+}
+
+.Menu {
+  padding: $default-top-margin
+           $default-right-margin
+           $default-bottom-margin
+           $default-left-margin;
+  box-sizing: border-box;
+  position: fixed;
+  background-color: $black;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+
+  opacity: 0;
+  visibility: hidden;
+
+  // transition: opacity .35s ease
+  transition:  all .35s ease;
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.Menu-Content {
+  position: relative;
+  color: $black;
+  background-color: $white;
+  height: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Menu-Content__List {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+  font-size: 4em;
+  text-align: center;
+  font-family: $secondary-font;
+  cursor: pointer;
+}
+.Menu-Content__List li {
+  margin: $default-padding-side;
+}
+.Menu-Content__List li div {
+  text-decoration: underline;
+  text-transform: lowercase;
+  text-decoration-color: $orange;
+  font-weight: 600;
+}

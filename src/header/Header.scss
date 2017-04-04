@@ -7,6 +7,7 @@
            $default-left-margin;
   height: 100vh;
   box-sizing: border-box;
+  position: relative;
 }
 
 .Header-Content {
@@ -26,23 +27,71 @@
   justify-content: space-between;
   align-items: center;
   padding: 40px 50px 0 50px;
+  z-index: 20;
 }
 .Header-Top__Logo {
   width: auto;
   height: auto;
   overflow: hidden;
+  cursor: pointer;
 }
 .Header-Top__Logo img {
   height: 3em;
 }
+
 .Header-Top__Menu {
   width: auto;
   height: auto;
-  overflow: hidden;
   cursor: pointer;
 }
-.Header-Top__Menu img {
-  height: 1em;
+
+.Menu-Button {
+  position: relative;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &.active {
+    .Menu-Button__Top {
+      transform: translateY(11px) translateX(0) rotate(45deg);
+      background: $black;
+    }
+    .Menu-Button__Middle {
+      opacity: 0;
+      background: $black;
+    }
+
+    .Menu-Button__Bottom {
+      transform: translateY(-11px) translateX(0) rotate(-45deg);
+      background: $black;
+    }
+  }
+
+  span {
+    background: $light-gray;
+    border: none;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:  all .35s ease;
+    cursor: pointer;
+
+    &:nth-of-type(2) {
+      top: 11px;
+    }
+
+    &:nth-of-type(3) {
+      top: 22px;
+    }
+  }
 }
 
 .Header-Title {
