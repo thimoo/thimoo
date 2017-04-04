@@ -34,7 +34,11 @@ class Header extends Component {
           </div>
           <div className="Header-Bottom">
             <div className="Header-Bottom__Arrow">
-              <Link to="Portfolio"><img src={arrow} alt="Arrow" /></Link>
+              <Link to="Portfolio">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59.44 22.9">
+                  <polyline className="Header-Bottom__Arrow-Path" points="1.25 1.25 29.89 21.37 58.19 1.31"/>
+                </svg>
+              </Link>
             </div>
           </div>
         </div>

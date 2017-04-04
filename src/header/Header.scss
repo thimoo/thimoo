@@ -34,6 +34,11 @@
   height: auto;
   overflow: hidden;
   cursor: pointer;
+  transition: opacity .25s ease;
+
+  &:hover {
+    opacity: .7;
+  }
 }
 .Header-Top__Logo img {
   height: 3em;
@@ -137,9 +142,23 @@
   overflow: hidden;
   cursor: pointer;
   animation: move-arrow 2s infinite;
+
+  &:hover .Header-Bottom__Arrow-Path {
+    stroke: $orange;
+    stroke-width: 3.5px;
+  }
 }
-.Header-Bottom__Arrow img {
+.Header-Bottom__Arrow svg {
   height: 1em;
+  padding: 30px;
+}
+.Header-Bottom__Arrow-Path {
+  fill: none;
+  stroke: $light-gray;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-width: 2.5px;
+  transition: all .25s ease;
 }
 
 @keyframes move-arrow {

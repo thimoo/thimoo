@@ -34,28 +34,54 @@
 }
 
 .Contact-Team {
-  margin-top: $default-padding-top;
+  margin-top: $default-padding-top -10;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 .Contact-Team__Member {
-  display: block;
-  width: 12em;
-  height: 12em;
-  background-color: #333333;
   @include pin-parent();
+  display: block;
+  width: 16em;
+  height: 16em;
+  background-color: #333333;
   margin: 30px;
+
+  &:hover .Contact-Team__Description {
+    top: 65%;
+  }
 }
 .Contact-Team__Img {
   @include pin-content();
 }
+.Contact-Team__Img img {
+  width: 100%;
+  height: auto;
+}
 .Contact-Team__Description {
   @include pin-content();
+  top: 100%;
+  background-color: $orange-transparent;
+  transition: all .25s ease;
+  box-sizing: border-box;
+  padding: $default-top-margin;
+
+  h2 {
+    font-size: 1.2em;
+    line-height: 1em;
+    font-family: $secondary-font;
+    margin-top: 0.3em;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: 300;
+  }
 }
 
 .Contact-Info {
-  margin-top: $default-padding-top;
+  margin-top: $default-padding-top -10;
 }
 .Contact-Info__Tel,
 .Contact-Info__Email {
@@ -69,20 +95,44 @@
   color: $white;
   text-decoration: none;
   line-height: 2.2em;
+  transition:  all .35s ease;
+
+  &:hover {
+    color: $orange;
+  }
 }
-.Contact-Info__Address {}
-.Contact-Info__Address p {
+.Contact-Info__Address {
   text-align: center;
+}
+.Contact-Info__Address p {
   color: $dark-gray;
   font-weight: 300;
   font-size: 1.4em;
   margin-bottom: 50px;
+  display: inline-block;
+  transition: opacity .25s ease;
+
+  &:hover {
+    opacity: .7;
+  }
 }
 .Contact-Info__Map {
   display: flex;
   justify-content: center;
+
+  a:hover .Contact-Info__Map-Path {
+    stroke: $orange;
+  }
 }
-.Contact-Info__Map img {
+.Contact-Info__Map-Path {
+  fill: none;
+  stroke: $light-gray;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-width: 2.5px;
+  transition: all .25s ease;
+}
+.Contact-Info__Map svg {
   height: 3.5em;
 }
 
