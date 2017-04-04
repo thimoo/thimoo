@@ -33,15 +33,15 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="Contact">
+      <section id="Contact" className="Contact">
         <div className="Contact-Content">
-          <div className="Contact-Title">une petite <span>agence</span>,<br/>de grandes <span>aspirations</span> !</div>
+          <div className="Contact-Title">une petite <span>agence</span>,<br/>de grandes <span>aspirations</span>&nbsp;!</div>
           <div className="Contact-Team">
             {listEmployees}
           </div>
           <div className="Contact-Info">
-            <div className="Contact-Info__Tel"><a href="tel:0041797255989">+41 79 725 59 89</a></div>
-            <div className="Contact-Info__Email"><a href="mailto:info@thimoo.ch">info@thimoo.ch</a></div>
+            <div className="Contact-Info__Tel"><a href="tel:0041797255989">+41&nbsp;79&nbsp;725&nbsp;59&nbsp;89</a></div>
+            <div className="Contact-Info__Email"><a href="mailto:info@thimoo.ch">info<span>@</span>thimoo.ch</a></div>
             <div className="Contact-Info__Address">
               <p>thimoo<br/>
               Closel-Bourbon 3<br/>
@@ -52,7 +52,7 @@ class Contact extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

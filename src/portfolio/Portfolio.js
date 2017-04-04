@@ -4,11 +4,11 @@ import './Portfolio.css';
 class Portfolio extends Component {
   render() {
     return (
-      <div id="Portfolio" className="Portfolio">
+      <section id="Portfolio" className="Portfolio">
         <div className="Portfolio-Content">
           my Portfolio
         </div>
-      </div>
+      </section>
     );
   }
 }

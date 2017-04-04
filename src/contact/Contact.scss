@@ -1,37 +1,51 @@
 @import "../shared.scss";
 
+
 .Contact {
   padding: $default-top-margin
            $default-right-margin
            $default-bottom-margin
            $default-left-margin;
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
 }
 
 .Contact-Content {
   padding: $default-padding;
   background-color: $black;
   color: $white;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .Contact-Title {
   @include title();
-  font-size: 2.7em;
+  font-size: 3.5em;
 }
 .Contact-Title span {
   @include accent-title();
 }
 
 .Contact-Team {
-  margin-top: $default-padding;
+  margin-top: $default-padding-top;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .Contact-Team__Member {
+  display: block;
   width: 12em;
   height: 12em;
   background-color: #333333;
   @include pin-parent();
-  margin: 0 30px;
+  margin: 30px;
 }
 .Contact-Team__Img {
   @include pin-content();
@@ -41,7 +55,7 @@
 }
 
 .Contact-Info {
-  margin-top: $default-padding;
+  margin-top: $default-padding-top;
 }
 .Contact-Info__Tel,
 .Contact-Info__Email {
@@ -70,4 +84,10 @@
 }
 .Contact-Info__Map img {
   height: 3.5em;
+}
+
+@media all and (max-width: 640px) {
+  .Contact-Title {
+    font-size: 2.7em;
+  }
 }

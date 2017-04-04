@@ -9,7 +9,7 @@ import './Header.css';
 class Header extends Component {
   render() {
     return (
-      <div className="Header">
+      <section className="Header">
         <div className="Header-Content">
           <div className="Header-Top">
             <div className="Header-Top__Logo">
@@ -30,7 +30,7 @@ class Header extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

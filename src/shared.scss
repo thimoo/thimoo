@@ -16,7 +16,9 @@ $default-bottom-margin:  12px;
 $default-right-margin:   12px;
 $default-left-margin:    12px;
 
-$default-padding:        60px;
+$default-padding-top:    120px;
+$default-padding-side:   50px;
+$default-padding:        $default-padding-top $default-padding-side;
 
 
 // MIXINS

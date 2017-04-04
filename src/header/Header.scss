@@ -49,10 +49,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 50px;
 }
 .Header-Title__Intro {
   font-weight: 300;
   font-size: 2em;
+  text-align: center;
   color: $gray;
   margin-bottom: $default-bottom-margin*3;
 }
@@ -96,4 +98,16 @@
   25%  { transform: translateY(-10px); }
   50%  { transform: translateY(0); }
   // 100% {}
+}
+
+@media all and (max-width: 640px) {
+  .Header-Title__Intro {
+    font-size: 1.5em;
+  }
+  .Header-Title__Baseline {
+    font-size: 3em;
+  }
+  .Header-Title__Clock img {
+    height: 6em;
+  }
 }
