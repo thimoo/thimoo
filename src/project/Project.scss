@@ -1,0 +1,40 @@
+@import "../shared.scss";
+
+.Project {}
+
+.Project-Content {
+  @include pin-parent();
+  min-height: 60vh;
+}
+
+.Project-Background {
+  @include pin-content();
+  background-size: cover;
+}
+.Project-Infos {
+  @include pin-content();
+  padding: $default-top-margin
+           $default-right-margin
+           $default-bottom-margin
+           $default-left-margin;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: stretch;
+
+  div {
+    flex-basis: auto;
+  }
+}
+.Project-Infos__Logo {
+  padding: $default-padding-side;
+  flex-grow: 2;
+}
+.Project-Infos__Logo img {
+  width: 50%;
+  height: auto;
+}
+.Project-Infos__Description {
+  flex-grow: 1;
+  padding: $default-padding-side;
+}
