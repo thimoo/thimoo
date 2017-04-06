@@ -46,7 +46,7 @@ class Contact extends Component {
       <section id="Contact" className="Contact">
         <div className="Contact-Wrapper">
           <div className="Contact-Content">
-            <div className="Contact-Title">une petite <span>agence</span>,<br/>de grandes <span>aspirations</span>&nbsp;!</div>
+            <div className="Contact-Title">une&nbsp;petite&nbsp;<span>agence</span>,<br/>de&nbsp;grandes&nbsp;<span>aspirations</span>&nbsp;!</div>
             <div className="Contact-Team">
               {listEmployees}
             </div>
@@ -55,7 +55,7 @@ class Contact extends Component {
               <div className="Contact-Info__Email"><a href="mailto:info@thimoo.ch">info<span>@</span>thimoo.ch</a></div>
               <div className="Contact-Info__Address">
                 <p>thimoo<br/>
-                Closel-Bourbon 3<br/>
+                Closel Bourbon 3<br/>
                 2075 Thielle-Wavre</p>
               </div>
               <div className="Contact-Info__Map">

@@ -66,7 +66,9 @@
     padding-bottom: 100%;
   }
 
-  &:hover .Contact-Team__Description {
+  &:hover .Contact-Team__Description,
+  &:focus .Contact-Team__Description,
+  &:active .Contact-Team__Description {
     top: 0;
   }
 }
@@ -116,7 +118,7 @@
   line-height: 2.2em;
   transition:  all .35s ease;
 
-  &:hover {
+  &:hover, &:focus, &:active {
     color: $orange;
   }
 }
@@ -131,7 +133,7 @@
   display: inline-block;
   transition: opacity .25s ease;
 
-  &:hover {
+  &:hover, &:focus, &:active {
     opacity: .7;
   }
 }
@@ -155,9 +157,22 @@
   height: 3.5em;
 }
 
-@media all and (max-width: 640px) {
+
+@media all and (max-width: 1024px) {
   .Contact-Title {
-    font-size: 2.7em;
+    font-size: 3.2em;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .Contact-Content {
+    padding: $default-padding-top / 2
+    $default-padding-side / 2
+    $default-padding-top / 2
+    $default-padding-side / 2;
+  }
+  .Contact-Title {
+    font-size: 1.9em;
   }
   .Contact-Info__Tel,
   .Contact-Info__Email {

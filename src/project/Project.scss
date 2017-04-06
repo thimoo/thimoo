@@ -25,13 +25,16 @@
            $default-bottom-margin
            $default-left-margin;
   box-sizing: border-box;
+}
+.Project-Infos__Wrapper {
+box-sizing: border-box;
 
-  display: flex;
-  align-items: stretch;
+display: flex;
+align-items: stretch;
 
-  div {
-    flex-basis: auto;
-  }
+div {
+flex-basis: auto;
+}
 }
 .Project-Infos__Logo {
   padding: $default-padding-side*2;
@@ -44,13 +47,6 @@
   max-width: 35em;
   max-height: 25em;
   height: auto;
-}
-.CloselBourbon .Project-Infos__Logo img {
-  min-width: auto;
-  width: auto;
-  min-height: 9em;
-  height: 45%;
-  max-height: 25em;
 }
 
 .Project-Infos__Description {
@@ -138,5 +134,94 @@
     p {
       font-size: 1em *1.3;
     }
+  }
+}
+
+@media (max-width: 960px) {
+  .Project-Content,
+  .Project-Background,
+  .Project-Infos {
+    position: relative;
+  }
+  .Project-Content {
+    height: auto;
+    max-height: none;
+    padding: $default-top-margin
+             $default-right-margin
+             $default-bottom-margin
+             $default-left-margin;
+  }
+  .Project-Background {
+    height: 35vh;
+    max-height: 100vh;
+    box-sizing: border-box;
+    left: 0;
+    right: 0;
+    padding: $default-padding-side;
+    background-position: top center;
+
+    .Project-Background__Logo{
+      height: 100%;
+
+      img {
+        height: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  .Project-Infos {
+    padding: 0;
+  }
+  .Project-Infos__Wrapper {
+    box-sizing: border-box;
+    padding: $default-padding-side;
+    flex-flow: column;
+    border-top: 0;
+
+    .Project-Infos__Logo {
+      display: none;
+    }
+    .Project-Infos__Description {
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  .Project-Infos__Wrapper {
+    background-color: $black;
+  }
+
+  .Project-Infos__Description {
+    color: $white;
+
+
+    ::-moz-selection,
+    ::selection {
+      background: $white;
+      color: $black;
+    }
+
+    p.button {
+      border: 1px solid;
+      border-color: $white;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  .light .Project-Infos__Description p.button,
+  .Project-Infos__Description p.button {
+    &:hover {
+      border: 1px solid;
+      border-color: $orange;
+      a { color: $orange; }
+    }
+  }
+}
+@media (min-width: 961px) {
+  .Project-Background__Logo {
+    display: none;
   }
 }

@@ -3,6 +3,7 @@ import Header from './header/Header.js';
 import Portfolio from './portfolio/Portfolio.js';
 import Contact from './contact/Contact.js';
 import './App.css';
+import './libs/css/normalize.css';
 
 class App extends Component {
 

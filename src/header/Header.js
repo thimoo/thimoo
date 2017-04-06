@@ -29,7 +29,7 @@ class Header extends Component {
           </div>
           <div className="Header-Title">
             <div className="Header-Title__Intro">notre <span>réveil</span> sonne au petit <span>matin</span> pour</div>
-            <div className="Header-Title__Baseline"><span>façonner</span> vos<br/> <span>solutions</span> digitales</div>
+            <div className="Header-Title__Baseline"><span>façonner</span>&nbsp;vos<br/><span>solutions</span>&nbsp;digitales</div>
             <div className="Header-Title__Clock"><img src={clock} alt="Clock" /></div>
           </div>
           <div className="Header-Bottom">

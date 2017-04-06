@@ -1,7 +1,10 @@
 @import "../shared.scss";
 
 body.menu-open {
+  position:fixed;
   overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
 .Menu {
@@ -22,7 +25,6 @@ body.menu-open {
   opacity: 0;
   visibility: hidden;
 
-  // transition: opacity .35s ease
   transition:  all .35s ease;
 
   &.is-open {
@@ -60,4 +62,14 @@ body.menu-open {
   text-transform: lowercase;
   text-decoration-color: $orange;
   font-weight: 600;
+}
+
+@media all and (max-width: 450px), all and (max-height: 500px) {
+
+  .Menu-Content__List {
+    font-size: 2em;
+  }
+  .Menu-Content__List li {
+    margin: $default-padding-side / 2;
+  }
 }

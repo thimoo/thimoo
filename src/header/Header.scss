@@ -6,6 +6,8 @@
            $default-bottom-margin
            $default-left-margin;
   height: 100vh;
+  width: 100vw;
+  overflow: hidden;
   box-sizing: border-box;
   position: relative;
 }
@@ -30,7 +32,7 @@
   z-index: 20;
 }
 .Header-Top__Logo {
-  width: auto;
+  width: 100%;
   height: auto;
   overflow: hidden;
   cursor: pointer;
@@ -106,6 +108,7 @@
   padding: 0 50px;
 }
 .Header-Title__Intro {
+  width: 100%;
   font-weight: 300;
   font-size: 2em;
   text-align: center;
@@ -133,8 +136,11 @@
 
 .Header-Bottom {
   display: flex;
+  flex-flow: row;
   justify-content: center;
   padding: 0 50px 40px 50px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .Header-Bottom__Arrow {
   width: auto;
@@ -142,6 +148,13 @@
   overflow: hidden;
   cursor: pointer;
   animation: move-arrow 2s infinite;
+
+  > div {
+
+      width: auto;
+      height: auto;
+      overflow: hidden;
+  }
 
   &:hover .Header-Bottom__Arrow-Path {
     stroke: $orange;
@@ -151,6 +164,7 @@
 .Header-Bottom__Arrow svg {
   height: 1em;
   padding: 30px;
+  box-sizing: content-box;
 }
 .Header-Bottom__Arrow-Path {
   fill: none;
@@ -165,17 +179,114 @@
   0%   { transform: translateY(0); }
   25%  { transform: translateY(-10px); }
   50%  { transform: translateY(0); }
-  // 100% {}
 }
 
-@media all and (max-width: 640px) {
+@media all and (orientation: portrait) and (max-width: 720px) {
+  .Header-Top__Logo img {
+    height: 2.5em;
+  }
   .Header-Title__Intro {
     font-size: 1.5em;
   }
   .Header-Title__Baseline {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   .Header-Title__Clock img {
     height: 6em;
+  }
+}
+
+@media all and (orientation: portrait) and (max-width: 450px) {
+  .Header-Top__Logo img {
+    height: 2em;
+  }
+  .Header-Title__Intro {
+    font-size: 1.2em;
+  }
+  .Header-Title__Baseline {
+    font-size: 1.8em;
+  }
+  .Header-Title__Clock img {
+    height: 5em;
+  }
+}
+
+@media all and (orientation: landscape) and (max-height: 720px)  {
+  .Header-Title__Intro {
+    font-size: 1.5em;
+    margin-bottom: $default-bottom-margin*2;
+  }
+  .Header-Title__Baseline {
+    font-size: 2.5em;
+  }
+  .Header-Title__Clock {
+    margin-top: $default-top-margin*3;
+
+    img {
+      height: 6em;
+    }
+  }
+  .Header-Bottom__Arrow svg {
+    padding: 0;
+  }
+}
+
+@media all and (orientation: landscape) and (max-height: 600px) {
+  .Header-Top {
+    padding: 0 20px;
+    padding-top: 30px;
+  }
+  .Header-Title {
+    padding: 0 20px;
+  }
+  .Header-Bottom {
+    padding: 0 20px;
+    padding-bottom: 30px;
+  }
+  .Header-Title__Clock {
+    display: none;
+  }
+}
+
+@media all and (max-height: 600px) {
+  .Header-Title__Clock {
+    display: none;
+  }
+}
+
+@media all and (max-height: 300px) {
+  .Header-Title__Intro {
+    font-size: 1em;
+  }
+  .Header-Title__Baseline {
+    font-size: 1.5em;
+  }
+  .Header-Top__Logo img {
+    height: 1.3em;
+  }
+
+  .Menu-Button {
+    height: 27px * 0.6;
+    width: 35px * 0.6;
+
+    &.active {
+      .Menu-Button__Top {
+        transform: translateY(11px * 0.6) translateX(0) rotate(45deg);
+      }
+
+      .Menu-Button__Bottom {
+        transform: translateY(-11px * 0.6) translateX(0) rotate(-45deg);
+      }
+    }
+
+    span {
+      &:nth-of-type(2) {
+        top: 11px * 0.6;
+      }
+
+      &:nth-of-type(3) {
+        top: 22px * 0.6;
+      }
+    }
   }
 }

@@ -19,10 +19,10 @@ class Portfolio extends Component {
             classes="MeteoSuisse light"
             imgSrc={meteosuisse}
             logoSrc={logoMeteosuisse}
-            title="MétéoSuisse"
-            text="# descriptif du projet..."
+            title="SwissMetNet Display de MétéoSuisse"
+            text="Réalisation d’une application web pour l’affichage des relevés de mesuresactuelles pour la météo et le climat de MétéoSuisse."
             buttonText="Découvrir le projet"
-            buttonSrc="#" />
+            buttonSrc="https://medium.com/@thimoo.ch/swissmetnet-display-de-m%C3%A9t%C3%A9osuisse-f0c3bef06108" />
           <Project
             classes="CloselBourbon"
             imgSrc={closelBourbon}
