@@ -42,7 +42,12 @@
 
 .Contact-Team {
   margin-top: $default-padding-top -10;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -53,6 +58,7 @@
   max-width: 16em;
   background-color: #333333;
   margin: 30px;
+  -webkit-flex: 1 1 16em;
 
   &:after {
     content: "";
