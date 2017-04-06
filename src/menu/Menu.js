@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ScrollAnim, { Link } from 'rc-scroll-anim';
+import { Link } from 'rc-scroll-anim';
 import './Menu.css';
 
 class Menu extends Component {

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Footer from '../footer/Footer.js';
-import map from '../assets/map.svg';
 import nico from '../assets/employees/thimoo-nico-frei.jpg';
 import joel from '../assets/employees/thimoo-joel-gugger.jpg';
 import './Contact.css';

@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import ScrollAnim, { Link } from 'rc-scroll-anim';
+import { Link } from 'rc-scroll-anim';
 import logo from '../assets/logo-white.svg';
-import menu from '../assets/menu.svg';
 import clock from '../assets/clock.svg';
-import arrow from '../assets/arrow.svg';
 import Menu from '../menu/Menu.js';
 import './Header.css';
 

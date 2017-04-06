@@ -16,7 +16,7 @@ class Project extends Component {
 
   render() {
     return (
-      <article className="Project" className={this.props.classes}>
+      <article className={"Project" + this.props.classes}>
         <div className="Project-Content">
           <div className="Project-Background" style={this.state.backgroundStyles}>
             <div className="Project-Background__Logo">
