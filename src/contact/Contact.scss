@@ -42,10 +42,17 @@
 .Contact-Team__Member {
   @include pin-parent();
   display: block;
-  width: 16em;
-  height: 16em;
+  width: 100%;
+  max-width: 16em;
+  // height: 16em;
   background-color: #333333;
   margin: 30px;
+
+  &:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
 
   &:hover .Contact-Team__Description {
     top: 0;

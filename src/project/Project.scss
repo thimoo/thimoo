@@ -4,12 +4,14 @@
 
 .Project-Content {
   @include pin-parent();
-  min-height: 60vh;
+  height: 65vw;
+  max-height: 100vh;
 }
 
 .Project-Background {
   @include pin-content();
   background-size: cover;
+  background-position: bottom center; 
 }
 .Project-Infos {
   @include pin-content();
