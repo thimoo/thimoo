@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Header from './header/Header.js';
 import Portfolio from './portfolio/Portfolio.js';
 import Contact from './contact/Contact.js';
-import Footer from './footer/Footer.js';
 import './App.css';
 
 class App extends Component {
@@ -41,7 +40,6 @@ class App extends Component {
         <Header isMenuActive={this.state.isMenuActive} toggleMenu={this.toggleMenu}></Header>
         <Portfolio></Portfolio>
         <Contact></Contact>
-        <Footer></Footer>
       </div>
     );
   }

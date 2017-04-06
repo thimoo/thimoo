@@ -4,13 +4,20 @@
 .Contact {
   padding: $default-top-margin
            $default-right-margin
-           $default-bottom-margin
+           0 // no bottom padding
            $default-left-margin;
   box-sizing: border-box;
   min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: stretch;
+}
+
+.Contact-Wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
 }
 
 .Contact-Content {
@@ -145,5 +152,9 @@
 @media all and (max-width: 640px) {
   .Contact-Title {
     font-size: 2.7em;
+  }
+  .Contact-Info__Tel,
+  .Contact-Info__Email {
+    font-size: 1.7em;
   }
 }
