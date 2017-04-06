@@ -166,7 +166,7 @@
 
       img {
         height: 100%;
-        max-width: 100%;
+        max-width: 17em;
       }
     }
   }
@@ -221,6 +221,7 @@
     }
   }
 }
+
 @media (min-width: 961px) {
   .Project-Background__Logo {
     display: none;

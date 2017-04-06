@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import Project from '../project/Project';
 import meteosuisse from '../assets/projects/meteosuisse.jpg';
 import closelBourbon from '../assets/projects/closel-bourbon.jpg';
