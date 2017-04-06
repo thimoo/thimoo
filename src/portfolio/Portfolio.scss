@@ -11,4 +11,12 @@
 .Portfolio-Content {
   color: $black;
   box-sizing: border-box;
+
+    article:first-child {
+      padding-top: $default-top-margin;
+    }
+
+    article:last-child {
+      padding-bottom: $default-bottom-margin;
+    }
 }
