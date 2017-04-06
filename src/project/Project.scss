@@ -6,12 +6,17 @@
   @include pin-parent();
   height: 65vw;
   max-height: 100vh;
+  box-sizing: border-box;
 }
 
 .Project-Background {
   @include pin-content();
   background-size: cover;
-  background-position: bottom center; 
+  background-position: bottom left;
+
+  left: $default-left-margin;
+  right: $default-right-margin;
+  width: auto;
 }
 .Project-Infos {
   @include pin-content();
@@ -29,14 +34,96 @@
   }
 }
 .Project-Infos__Logo {
-  padding: $default-padding-side;
+  padding: $default-padding-side*2;
   flex-grow: 2;
+  width: 50%;
 }
 .Project-Infos__Logo img {
-  width: 50%;
+  min-width: 15em;
+  width: 85%;
+  max-width: 35em;
+  max-height: 25em;
   height: auto;
 }
+.CloselBourbon .Project-Infos__Logo img {
+  min-width: auto;
+  width: auto;
+  min-height: 9em;
+  height: 45%;
+  max-height: 25em;
+}
+
 .Project-Infos__Description {
   flex-grow: 1;
-  padding: $default-padding-side;
+  width: 50%;
+  padding: $default-padding-side*2;
+
+  h2 {
+    font-family: $secondary-font;
+    font-size: 1.7em;
+    font-weight: 700;
+    margin-top: 0;
+    line-height: 1.2em;
+  }
+
+  p {
+    font-weight: 400;
+  }
+
+  p.button {
+    font-weight: 500;
+    border: 1.5px solid $black;
+    display: inline-block;
+    margin: 0;
+    transition: all .25s ease;
+    box-sizing: border-box;
+
+    @include no-selectable();
+
+    a {
+      display: block;
+      padding: 8px 11px 6px 11px;
+      box-sizing: border-box;
+
+      text-transform: uppercase;
+      color: $black;
+      text-decoration: none;
+      transition: all .25s ease;
+    }
+
+    &:hover {
+      border: 1.5px solid $orange;
+      a { color: $orange; }
+    }
+  }
+}
+
+.light .Project-Infos__Description {
+  color: $white;
+
+
+  ::-moz-selection,
+  ::selection {
+    background: $white;
+    color: $black;
+  }
+
+  p.button {
+    border: 1px solid;
+    border-color: $white;
+
+    a { color: $white; }
+
+    &:hover {
+      border-color: $black;
+      a { color: $black; }
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .Project-Infos__Logo,
+  .Project-Infos__Description {
+    padding: 10%;
+  }
 }

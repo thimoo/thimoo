@@ -16,15 +16,28 @@ class Portfolio extends Component {
       <section id="Portfolio" className="Portfolio">
         <div className="Portfolio-Content">
           <Project
+            classes="MeteoSuisse light"
             imgSrc={meteosuisse}
-            logoSrc={logoMeteosuisse} />
-          <Project imgSrc={closelBourbon} logoSrc={logoCloselBourbon} />
+            logoSrc={logoMeteosuisse}
+            title="MétéoSuisse"
+            text="# descriptif du projet..."
+            buttonText="Découvrir le projet"
+            buttonSrc="#" />
           <Project
+            classes="CloselBourbon"
+            imgSrc={closelBourbon}
+            logoSrc={logoCloselBourbon}
+            title="Jardin Closel Bourbon"
+            text="# descriptif du projet..."
+            buttonText="Découvrir le projet"
+            buttonSrc="#" />
+          <Project
+            classes="Echallens"
             imgSrc={echallens}
             logoSrc={logoEchallens}
             title="E3 Echallens"
             text="Un redesign de l’identité graphique de l’Eglise évanglique d’Echallens dans un style actuel et coloré accompagné d’une refonte de sa présence en ligne."
-            buttonText="Découvrir le site"
+            buttonText="Découvrir le projet"
             buttonSrc="#" />
         </div>
       </section>
