@@ -35,6 +35,7 @@
 .Contact-Title {
   @include title();
   font-size: 3.5em;
+  min-height: 2.5em;
 }
 .Contact-Title span {
   @include accent-title();
@@ -141,6 +142,7 @@
 .Contact-Info__Map {
   display: flex;
   justify-content: center;
+  height: 3.5em;
 
   a:hover .Contact-Info__Map-Path {
     stroke: $orange;

@@ -19,7 +19,7 @@
     article {
       position: -webkit-sticky;
       position: sticky;
-      top: $default-top-margin;
+      top: $default-top-margin - 1px; // google chrome fix 1px red border top
     }
 
     article:first-child {
