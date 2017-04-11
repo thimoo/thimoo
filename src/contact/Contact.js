@@ -21,21 +21,26 @@ const employees = [
     img: null,
     name: 'Vous',
     role: 'Offre d\'emploi',
-    link: null
+    link: 'https://medium.com/@thimoo.ch/d%C3%A9veloppeur-full-stack-50-fcbf520c9fcc'
   }
 ];
 
 const listEmployees = employees.map((employee) => {
   const img = (employee.img) ? <img src={employee.img} alt={employee.name} /> : null;
-  return (<div className="Contact-Team__Member" key={employee.name}>
+  const content = <div className="Contact-Team__Description">
+    <h2>{employee.name}</h2>
+    <p>{employee.role}</p>
+  </div>;
+  const link = (employee.link) ? <a href={employee.link} target="_blanck">{content}</a> : content;
+  const wrapper = <div className="Contact-Team__Member" key={employee.name}>
     <div className="Contact-Team__Img">
       {img}
     </div>
-    <div className="Contact-Team__Description">
-      <h2>{employee.name}</h2>
-      <p>{employee.role}</p>
-    </div>
-  </div>);
+      {link}
+  </div>;
+  return (
+    wrapper
+  );
 });
 
 class Contact extends Component {

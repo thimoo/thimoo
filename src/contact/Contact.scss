@@ -86,16 +86,17 @@
   transition: all .25s ease;
   box-sizing: border-box;
   padding: $default-top-margin;
+  color: $white;
 
   h2 {
-    font-size: 1.2em;
+    font-size: 1.6em;
     line-height: 1em;
     font-family: $secondary-font;
     margin-top: 0.3em;
   }
 
   p {
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1em;
     font-weight: 300;
   }

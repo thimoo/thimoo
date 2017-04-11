@@ -13,9 +13,9 @@ class Menu extends Component {
       <section id="Menu" className={"Menu" + (this.props.isOpen ? " is-open" : "")}>
         <div className="Menu-Content">
           <ul className="Menu-Content__List">
-            <li><Link onClick={this.closeMenu.bind(this)} to="Portfolio">Portfolio</Link></li>
-            <li><Link onClick={this.closeMenu.bind(this)} to="Portfolio">Clients</Link></li>
-            <li><Link onClick={this.closeMenu.bind(this)} to="Contact">Contact</Link></li>
+            <li><Link onClick={this.closeMenu.bind(this)} to="Portfolio" duration="800">Portfolio</Link></li>
+            <li><Link onClick={this.closeMenu.bind(this)} to="Portfolio" duration="800">Clients</Link></li>
+            <li><Link onClick={this.closeMenu.bind(this)} to="Contact" duration="900">Contact</Link></li>
           </ul>
         </div>
       </section>
