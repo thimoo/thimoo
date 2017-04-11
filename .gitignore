@@ -11,6 +11,7 @@
 
 # generated css
 src/**/*.css
+!src/libs/**
 
 # misc
 .DS_Store
