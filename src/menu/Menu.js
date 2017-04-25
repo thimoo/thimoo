@@ -13,9 +13,17 @@ class Menu extends Component {
       <section id="Menu" className={"Menu" + (this.props.isOpen ? " is-open" : "")}>
         <div className="Menu-Content">
           <ul className="Menu-Content__List">
-            <li><Link onClick={this.closeMenu.bind(this)} to="Portfolio" duration={800}>Portfolio</Link></li>
-            <li><Link onClick={this.closeMenu.bind(this)} to="Portfolio" duration={800}>Clients</Link></li>
-            <li><Link onClick={this.closeMenu.bind(this)} to="Contact" duration={900}>Contact</Link></li>
+            <li><Link className="Menu__Link" onClick={this.closeMenu.bind(this)} to="Portfolio" duration={800}>portfolio</Link></li>
+            <li><Link className="Menu__Link" onClick={this.closeMenu.bind(this)} to="Contact" duration={900}>l'équipe</Link></li>
+            <li className="Menu__Contact">
+              <div className="Menu__Address">
+                <p>thimoo<br/>
+                Closel Bourbon 3<br/>
+                2075 Thielle-Wavre</p>
+              </div>
+              <div className="Menu__Tel"><a href="tel:0041797255989">+41&nbsp;79&nbsp;725&nbsp;59&nbsp;89</a></div>
+              <div className="Menu__Email"><a href="mailto:info@thimoo.ch">info<span>@</span>thimoo.ch</a></div>
+            </li>
           </ul>
         </div>
       </section>

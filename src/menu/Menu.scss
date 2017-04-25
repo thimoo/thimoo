@@ -52,12 +52,31 @@ body.menu-open {
   font-size: 4em;
   text-align: center;
   font-family: $secondary-font;
-  cursor: pointer;
+
+  .Menu__Link {
+    cursor: pointer;
+  }
+
+  .Menu__Contact {
+    margin-top: $default-padding-side * 2;
+    font-size: 0.35em;
+    text-decoration: none;
+    color: $gray;
+
+    a {
+      color: $gray;
+
+      &:hover, &:focus, &:active {
+        color: $orange;
+      }
+    }
+    // TODO
+  }
 }
 .Menu-Content__List li {
   margin: $default-padding-side;
 }
-.Menu-Content__List li div {
+.Menu-Content__List li .Menu__Link {
   text-decoration: underline;
   text-transform: lowercase;
   text-decoration-color: $orange;
@@ -68,6 +87,12 @@ body.menu-open {
 
   .Menu-Content__List {
     font-size: 2em;
+
+
+    .Menu__Contact {
+      margin-top: $default-padding-side;
+      font-size: 0.45em;
+    }
   }
   .Menu-Content__List li {
     margin: $default-padding-side / 2;
