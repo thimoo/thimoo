@@ -29,17 +29,17 @@ class Portfolio extends Component {
             imgSrc={closelBourbon}
             logoSrc={logoCloselBourbon}
             title="Jardin Closel Bourbon"
-            text="# descriptif du projet..."
+            text="Conception d’une ligne graphique pour les produits bio élaborés par des jeunes actif dans l’entreprise d’intégration PerspectivePlus."
             buttonText="Découvrir le projet"
-            buttonSrc="#" />
+            buttonSrc="https://medium.com/@thimoo.ch/jardin-closel-bourbon-42d852c6cae5" />
           <Project
             classes="Echallens"
             imgSrc={echallens}
             logoSrc={logoEchallens}
-            title="E3 Echallens"
-            text="Un redesign de l’identité graphique de l’Eglise évanglique d’Echallens dans un style actuel et coloré accompagné d’une refonte de sa présence en ligne."
+            title="Eglise évangélique d’Echallens"
+            text="Une refonte de l’identité graphique de l’Eglise évanglique d’Echallens dans un style actuel et coloré accompagné du développement de sa présence en ligne."
             buttonText="Découvrir le projet"
-            buttonSrc="#" />
+            buttonSrc="https://medium.com/@thimoo.ch/eglise-%C3%A9vang%C3%A9lique-dechallens-d147a03f2ec6" />
         </div>
       </section>
     );
