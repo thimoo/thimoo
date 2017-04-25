@@ -243,14 +243,21 @@
     padding: 0 20px;
     padding-bottom: 30px;
   }
-  .Header-Title__Clock {
-    display: none;
-  }
+  // .Header-Title__Clock {
+  //   display: none;
+  // }
 }
 
 @media all and (max-height: 600px) {
-  .Header-Title__Clock {
-    display: none;
+  // .Header-Title__Clock {
+  //   display: none;
+  // }
+  .Header {
+    height: 100%;
+  }
+
+  .Header-Content {
+    min-height: 600px;
   }
 }
 

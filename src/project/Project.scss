@@ -166,7 +166,7 @@
 
       img {
         height: 100%;
-        max-width: 17em;
+        max-width: 100%;
       }
     }
   }
@@ -219,6 +219,12 @@
       border-color: $orange;
       a { color: $orange; }
     }
+  }
+}
+
+@media all and (max-height: 600px) {
+  .Project-Background {
+    height: 12em;   // fixed size for mobile viewport
   }
 }
 
