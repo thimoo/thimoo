@@ -72,6 +72,10 @@
   &:active .Contact-Team__Description {
     top: 0;
   }
+
+  a .Contact-Team__Description p {
+    text-decoration: underline;
+  }
 }
 .Contact-Team__Img {
   @include pin-content();
@@ -157,6 +161,7 @@
   display: flex;
   justify-content: center;
   height: 3.5em;
+  text-align: center;
 
   a:hover .Contact-Info__Map-Path {
     stroke: $orange;

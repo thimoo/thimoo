@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { OverPack as ScrollOverPack } from 'rc-scroll-anim';
+import QueueAnim from 'rc-queue-anim';
 import './Project.css';
 
 class Project extends Component {
@@ -32,7 +34,11 @@ class Project extends Component {
               <div className="Project-Infos__Description">
                 <h2>{this.props.title}</h2>
                 <p>{this.props.text}</p>
-                <p className="button"><a href={this.props.buttonSrc}>{this.props.buttonText}</a></p>
+                <ScrollOverPack className="Project-Infos__Button" playScale="0.25">
+                    <QueueAnim  key="1" duration={100}>
+                      <p key="2" className="button"><a href={this.props.buttonSrc}>{this.props.buttonText}</a></p>
+                    </QueueAnim>
+                </ScrollOverPack>
               </div>
             </div>
           </div>

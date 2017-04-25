@@ -6,7 +6,8 @@
            $default-bottom-margin
            $default-left-margin;
   height: 100vh;
-  width: 100vw;
+  // Fix IE/Edge 100vw enable horizontal scroll bar
+  width: 100%;
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
@@ -105,7 +106,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   padding: 0 50px;
+  min-height: 27em;
 }
 .Header-Title__Intro {
   width: 100%;
@@ -129,6 +132,7 @@
   width: auto;
   height: auto;
   overflow: hidden;
+  text-align: center;
 }
 .Header-Title__Clock svg {
   height: 8em;
@@ -148,6 +152,7 @@
   overflow: hidden;
   cursor: pointer;
   animation: move-arrow 2s infinite;
+  text-align: center;
 
   > div {
 
@@ -258,6 +263,10 @@
 
   .Header-Content {
     min-height: 600px;
+  }
+
+  .Header-Title {
+    min-height: 20em;
   }
 }
 
