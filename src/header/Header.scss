@@ -123,6 +123,14 @@
 }
 .Header-Title__Baseline {
   @include title();
+
+  .react-rotating-text-cursor {
+    font-weight: 400;
+    text-decoration:none;
+    display: inline-block;
+    color: $light-gray;
+    animation: blinking-cursor 1.1s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+  }
 }
 .Header-Title__Baseline span {
   @include accent-title();
@@ -184,6 +192,18 @@
   0%   { transform: translateY(0); }
   25%  { transform: translateY(-10px); }
   50%  { transform: translateY(0); }
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @media all and (orientation: portrait) and (max-width: 720px) {
@@ -248,25 +268,33 @@
     padding: 0 20px;
     padding-bottom: 30px;
   }
-  // .Header-Title__Clock {
-  //   display: none;
-  // }
+}
+
+@media all and (max-height: 670px) {
+
+  .Header-Title {
+    margin-top: 30px;
+  }
 }
 
 @media all and (max-height: 600px) {
-  // .Header-Title__Clock {
-  //   display: none;
-  // }
   .Header {
     height: 100%;
   }
-
+  .Header-Top {
+    padding: 0 30px;
+    padding-top: 30px;
+  }
   .Header-Content {
     min-height: 600px;
   }
-
   .Header-Title {
     min-height: 20em;
+    padding: 0 30px;
+  }
+  .Header-Bottom {
+    padding: 0 30px;
+    padding-bottom: 30px;
   }
 }
 

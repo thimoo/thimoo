@@ -9,7 +9,8 @@
     "rc-tween-one": "1.1.x",
     "react": "15.4.x",
     "react-dom": "15.4.x",
-    "react-mt-svg-lines": "0.7.x"
+    "react-mt-svg-lines": "0.7.x",
+    "react-rotating-text": "1.2.x"
   },
   "devDependencies": {
     "node-sass": "^4.5.2",

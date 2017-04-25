@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'rc-scroll-anim';
 import QueueAnim from 'rc-queue-anim';
 import MtSvgLines from 'react-mt-svg-lines';
+import ReactRotatingText from 'react-rotating-text';
 
 import logo from '../assets/logo-white.svg';
 import Menu from '../menu/Menu.js';
@@ -29,7 +30,7 @@ class Header extends Component {
           </div>
             <QueueAnim key="1" className="Header-Title" duration={1000} interval={300}>
               <div key="1" className="Header-Title__Intro">notre <span>réveil</span> sonne au petit <span>matin</span> pour</div>
-              <div key="2" className="Header-Title__Baseline"><span>façonner</span>&nbsp;vos<br/><span>solutions</span>&nbsp;digitales</div>
+              <div key="2" className="Header-Title__Baseline"><span>façonner</span>&nbsp;vos<br/><span><ReactRotatingText pause={3000} items={['solutions', 'expériences', 'idées']} /></span>digitales</div>
               <div key="3" className="Header-Title__Clock">
                 <MtSvgLines animate={ true } duration={ 900 }>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 253.65 170.76">
