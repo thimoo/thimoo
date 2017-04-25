@@ -75,6 +75,13 @@
 }
 .Contact-Team__Img {
   @include pin-content();
+  //
+  //
+  // &:hover + .Contact-Team__Description,
+  // &:focus + .Contact-Team__Description,
+  // &:active + .Contact-Team__Description {
+  //   top: 0;
+  // }
 }
 .Contact-Team__Img img {
   width: 100%;
@@ -89,17 +96,24 @@
   padding: $default-top-margin;
   color: $white;
 
-  h2 {
-    font-size: 1.6em;
-    line-height: 1em;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: stretch;
+  text-align: center;
+
+  h3 {
+    font-size: 1.4em;
+    font-weight: 700;
     font-family: $secondary-font;
-    margin-top: 0.3em;
+    margin: 0 0 $default-bottom-margin / 2 0;
   }
 
   p {
     font-size: 1.2em;
-    line-height: 1em;
+    line-height: 1.2em;
     font-weight: 300;
+    margin: 0;
   }
 }
 

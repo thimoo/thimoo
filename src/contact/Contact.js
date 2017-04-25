@@ -7,25 +7,29 @@ import Footer from '../footer/Footer.js';
 
 import nico from '../assets/employees/thimoo-nico-frei.jpg';
 import joel from '../assets/employees/thimoo-joel-gugger.jpg';
+import needYou from '../assets/employees/we-need-you.jpg';
 import './Contact.css';
 
 const employees = [
   {
     img: nico,
     name: 'Nicolas Frei',
-    role: 'Developpeur',
+    info1: 'Design &',
+    info2: 'Stratégie communication',
     link: null
   },
   {
     img: joel,
     name: 'Joël Gugger',
-    role: 'Developpeur',
+    info1: 'Web &',
+    info2: 'Développement',
     link: null
   },
   {
-    img: null,
+    img: needYou,
     name: 'Vous',
-    role: 'Offre d\'emploi',
+    info1: 'Développeur Full Stack',
+    info2: 'août 2017 (50%)',
     link: 'https://medium.com/@thimoo.ch/d%C3%A9veloppeur-full-stack-50-fcbf520c9fcc'
   }
 ];
@@ -33,8 +37,9 @@ const employees = [
 const listEmployees = employees.map((employee) => {
   const img = (employee.img) ? <img src={employee.img} alt={employee.name} /> : null;
   const content = <div className="Contact-Team__Description">
-    <h2>{employee.name}</h2>
-    <p>{employee.role}</p>
+    <h3>{employee.name}</h3>
+    <p>{employee.info1}</p>
+    <p>{employee.info2}</p>
   </div>;
   const link = (employee.link) ? <a href={employee.link} target="_blanck">{content}</a> : content;
   const wrapper = <div className="Contact-Team__Member" key={employee.name}>
