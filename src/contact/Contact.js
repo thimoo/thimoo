@@ -14,8 +14,8 @@ const employees = [
   {
     img: nico,
     name: 'Nicolas Frei',
-    info1: 'Design &',
-    info2: 'Stratégie communication',
+    info1: 'Communication &',
+    info2: 'Design',
     link: null
   },
   {

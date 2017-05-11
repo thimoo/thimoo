@@ -21,7 +21,7 @@ class Portfolio extends Component {
             imgSrc={meteosuisse}
             logoSrc={logoMeteosuisse}
             title="SwissMetNet Display de MétéoSuisse"
-            text="Réalisation d’une application web pour l’affichage des relevés de mesuresactuelles pour la météo et le climat de MétéoSuisse."
+            text="Réalisation d’une application web pour l’affichage des relevés de mesures actuelles pour la météo et le climat de MétéoSuisse."
             buttonText="Découvrir le projet"
             buttonSrc="https://medium.com/@thimoo.ch/swissmetnet-display-de-m%C3%A9t%C3%A9osuisse-f0c3bef06108" />
           <Project
@@ -29,7 +29,7 @@ class Portfolio extends Component {
             imgSrc={closelBourbon}
             logoSrc={logoCloselBourbon}
             title="Jardin Closel Bourbon"
-            text="Conception d’une ligne graphique pour les produits bio élaborés par des jeunes actif dans l’entreprise d’intégration PerspectivePlus."
+            text="Conception d’une ligne graphique pour les produits bio élaborés par des jeunes actifs dans l’entreprise d’intégration PerspectivePlus."
             buttonText="Découvrir le projet"
             buttonSrc="https://medium.com/@thimoo.ch/jardin-closel-bourbon-42d852c6cae5" />
           <Project
