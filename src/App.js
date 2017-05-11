@@ -17,10 +17,6 @@ class App extends Component {
     this.toggleMenu = this.toggleMenu.bind(this);
   }
 
-  // componentWillMount() {
-  //   document.body.classList.toggle('menu-open', this.state.isMenuActive)
-  // }
-
   toggleMenu(e) {
     e.preventDefault();
 

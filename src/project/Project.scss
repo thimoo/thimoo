@@ -18,6 +18,9 @@
   right: $default-right-margin;
   width: auto;
 }
+.ProjectEchallens .Project-Background{
+  background-position: top center;
+}
 .Project-Infos {
   @include pin-content();
   padding: $default-top-margin
@@ -226,7 +229,7 @@
   }
 }
 
-@media all and (max-height: 600px) {
+@media all and (max-height: 600px) and (max-width: 960px) {
   .Project-Background {
     height: 12em;   // fixed size for mobile viewport
   }
