@@ -7,7 +7,8 @@ import Footer from '../footer/Footer.js';
 
 import nico from '../assets/employees/thimoo-nico-frei.jpg';
 import joel from '../assets/employees/thimoo-joel-gugger.jpg';
-import needYou from '../assets/employees/we-need-you.jpg';
+import eric from '../assets/employees/thimoo-eric-monnier.jpg';
+//import needYou from '../assets/employees/we-need-you.jpg';
 import './Contact.css';
 
 const employees = [
@@ -26,12 +27,19 @@ const employees = [
     link: null
   },
   {
+    img: eric,
+    name: 'Eric Monnier',
+    info1: 'Web &',
+    info2: 'Développement',
+    link: null
+  },
+  /*{
     img: needYou,
     name: 'Vous',
     info1: 'Développeur Full Stack',
     info2: 'août 2017 (50%)',
     link: 'https://medium.com/@thimoo.ch/d%C3%A9veloppeur-full-stack-50-fcbf520c9fcc'
-  }
+  }*/
 ];
 
 const listEmployees = employees.map((employee) => {
