@@ -19,13 +19,13 @@ const employees = [
     info2: 'Design',
     link: null
   },
-  {
+  /*{
     img: joel,
     name: 'Joël Gugger',
     info1: 'Web &',
     info2: 'Développement',
     link: null
-  },
+  },*/
   {
     img: eric,
     name: 'Eric Monnier',
