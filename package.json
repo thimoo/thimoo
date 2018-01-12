@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "rc-animate": "^2.3.6",
+    "rc-animate": "^2.4.4",
     "rc-queue-anim": "0.13.x",
     "rc-scroll-anim": "^1.0.7",
     "rc-tween-one": "1.1.x",
