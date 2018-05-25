@@ -3,7 +3,7 @@ import { OverPack as ScrollOverPack } from 'rc-scroll-anim';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 import MtSvgLines from 'react-mt-svg-lines';
-import Footer from '../footer/Footer.js';
+import Politiquedeconfidentialite from '../politiquedeconfidentialite/politiquedeconfidentialite.js';
 
 import nico from '../assets/employees/thimoo-nico-frei.jpg';
 import joel from '../assets/employees/thimoo-joel-gugger.jpg';
@@ -105,8 +105,13 @@ class Contact extends Component {
                 </a>
               </div>
             </div>
+            <div className={"footer-Bottom__Politiquedeconfidentialite" + (this.props.isPolitiquedeconfidentialiteActive ? " active" : "")} onClick={this.props.togglePolitiquedeconfidentialite}>
+              <a href="#">
+                Politique de confidentialité
+              </a>
+            </div>
+            <Politiquedeconfidentialite isOpen={this.props.isPolitiquedeconfidentialiteActive} togglePolitiquedeconfidentialite={this.props.togglePolitiquedeconfidentialite}></Politiquedeconfidentialite>
           </div>
-          <Footer></Footer>
         </div>
       </section>
     );

@@ -1,0 +1,66 @@
+@import "../shared.scss";
+
+.Politiquedeconfidentialite {
+  padding: $default-top-margin
+           $default-right-margin
+           $default-bottom-margin
+           $default-left-margin;
+  box-sizing: border-box;
+
+  background-color: $black;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  
+  max-width: 750px;
+  margin: auto;
+
+  max-height: 0;
+  overflow: hidden;
+
+  transition: max-height 0.25s ease-in;
+
+  &.is-open {
+      max-height: 100%;
+      overflow: visible;
+    .Politiquedeconfidentialite-Content {
+        padding: 30px 50px;
+        background-color: $white;
+    }
+  }
+}
+
+.Politiquedeconfidentialite-Content {
+  position: relative;
+  color: $black;
+  background-color: none;
+  height: 100%;
+  box-sizing: border-box;
+
+  justify-content: center;
+  align-items: center;
+  
+  h2 {
+    font-size: 1.1em;
+  }
+  
+  h3 {
+    font-size: 1.1em;
+  }
+  
+  p {
+    font-size: 0.9em;
+  }
+}
+
+@media all and (max-width: 450px), all and (max-height: 500px) {
+  .Politiquedeconfidentialite-Content {
+    padding: $default-top-margin
+             $default-right-margin
+             $default-bottom-margin
+             $default-left-margin;
+  }
+}

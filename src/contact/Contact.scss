@@ -21,7 +21,7 @@
 }
 
 .Contact-Content {
-  padding: $default-padding;
+  padding: $default-padding 60px;
   background-color: $black;
   color: $white;
   box-sizing: border-box;
@@ -142,8 +142,21 @@
     color: $orange;
   }
 }
-.Contact-Info__Address {
+.Contact-Info__Address,
+.footer-Bottom__Politiquedeconfidentialite {
   text-align: center;
+}
+.footer-Bottom__Politiquedeconfidentialite a {
+  color: $dark-gray;
+  font-weight: 300;
+  font-size: 1em;
+  margin-top: 50px;
+  display: inline-block;
+  transition:  all .35s ease;
+
+  &:hover, &:focus, &:active {
+    color: $orange;
+  }
 }
 .Contact-Info__Address p {
   color: $dark-gray;

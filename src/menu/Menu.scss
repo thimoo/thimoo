@@ -7,6 +7,10 @@ body.menu-open {
   height: 100vh;
 }
 
+body.Politiquedeconfidentialite-open {
+  overflow: auto;
+}
+
 .Menu {
   padding: $default-top-margin
            $default-right-margin

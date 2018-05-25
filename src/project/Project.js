@@ -36,7 +36,7 @@ class Project extends Component {
                 <p>{this.props.text}</p>
                 <ScrollOverPack className="Project-Infos__Button" playScale="0.25">
                     <QueueAnim  key="1" duration={100}>
-                      <p key="2" className="button"><a href={this.props.buttonSrc}>{this.props.buttonText}</a></p>
+                      <p key="2" className="button"><a href={this.props.buttonSrc} target="_blank">{this.props.buttonText}</a></p>
                     </QueueAnim>
                 </ScrollOverPack>
               </div>
