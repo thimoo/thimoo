@@ -4,20 +4,23 @@ import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 import MtSvgLines from 'react-mt-svg-lines';
 import Politiquedeconfidentialite from '../politiquedeconfidentialite/politiquedeconfidentialite.js';
+// import Modal from 'react-awesome-modal';
 
 import nico from '../assets/employees/thimoo-nico-frei.jpg';
-import joel from '../assets/employees/thimoo-joel-gugger.jpg';
+// import joel from '../assets/employees/thimoo-joel-gugger.jpg';
 import eric from '../assets/employees/thimoo-eric-monnier.jpg';
 //import needYou from '../assets/employees/we-need-you.jpg';
 import './Contact.css';
 
-const employees = [
+var employees = [
   {
     img: nico,
     name: 'Nicolas Frei',
     info1: 'Communication &',
     info2: 'Design',
-    link: null
+    link: null,
+    description: "<p>Nicolas Frei</p>",
+    visibility:false
   },
   /*{
     img: joel,
@@ -31,7 +34,9 @@ const employees = [
     name: 'Eric Monnier',
     info1: 'Web &',
     info2: 'Développement',
-    link: null
+    link: null,
+    description: "<p>Eric Monnier</p>",
+    visibility:false
   },
   /*{
     img: needYou,
@@ -83,8 +88,8 @@ class Contact extends Component {
               <div className="Contact-Info__Email"><a href="mailto:info@thimoo.ch">info<span>@</span>thimoo.ch</a></div>
               <div className="Contact-Info__Address">
                 <p>thimoo<br/>
-                Closel Bourbon 3<br/>
-                2075 Thielle-Wavre</p>
+                Sur le Souhait 17<br/>
+                2515 Prêles</p>
               </div>
               <div className="Contact-Info__Map">
                 <a target="_blanck"
@@ -106,7 +111,7 @@ class Contact extends Component {
               </div>
             </div>
             <div className={"footer-Bottom__Politiquedeconfidentialite" + (this.props.isPolitiquedeconfidentialiteActive ? " active" : "")} onClick={this.props.togglePolitiquedeconfidentialite}>
-              <a href="#">
+              <a href="#" alt="Politique de confidentialité">
                 Politique de confidentialité
               </a>
             </div>

@@ -35,7 +35,7 @@ class App extends Component {
       window.scrollTo(0,0);
     }
   }
-  
+
   togglePolitiquedeconfidentialite(e) {
     e.preventDefault();
 
@@ -44,17 +44,17 @@ class App extends Component {
     }));
 
     document.body.classList.toggle('Politiquedeconfidentialite-open', !this.state.isPolitiquedeconfidentialiteActive);
-    
+
     if (!this.state.isPolitiquedeconfidentialiteActive) {
       // with options
       setTimeout(function() {
         scrollToElement('#Politiquedeconfidentialite', {
             offset: 0,
             ease: 'linear',
-            duration: 350
+            duration: 500
         });
       },
-      251)
+      360)
     }
   }
 

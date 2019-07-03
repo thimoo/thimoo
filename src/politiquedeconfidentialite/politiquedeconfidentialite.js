@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'rc-scroll-anim';
+// import { Link } from 'rc-scroll-anim';
 import './politiquedeconfidentialite.css';
 
 class Politiquedeconfidentialite extends Component {
