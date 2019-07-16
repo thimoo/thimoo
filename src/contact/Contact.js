@@ -84,7 +84,7 @@ class Contact extends Component {
               {listEmployees}
             </div>
             <div className="Contact-Info">
-              <div className="Contact-Info__Tel"><a href="tel:+41797255989">+41&nbsp;79&nbsp;725&nbsp;59&nbsp;89</a></div>
+              <div className="Contact-Info__Tel"><a href="tel:+41327512269">+41&nbsp;32&nbsp;751&nbsp;22&nbsp;69</a></div>
               <div className="Contact-Info__Email"><a href="mailto:info@thimoo.ch">info<span>@</span>thimoo.ch</a></div>
               <div className="Contact-Info__Address">
                 <p>thimoo<br/>

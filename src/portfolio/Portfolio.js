@@ -82,7 +82,7 @@ class Portfolio extends Component {
             title="La Portion Magique"
             text="Conception d’un logo, création de l’univers visuel et élaboration de divers imprimés."
             buttonText="Découvrir le projet"
-            buttonSrc="http://www.portion-magique.ch/" />
+            buttonSrc="https://thimoo.ch/portion-magique/" />
           <Project
             classes="RDVTheApp"
             imgSrc={rdvTheApp}
