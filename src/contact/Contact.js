@@ -9,7 +9,7 @@ import Politiquedeconfidentialite from '../politiquedeconfidentialite/politiqued
 import nico from '../assets/employees/thimoo-nico-frei.jpg';
 // import joel from '../assets/employees/thimoo-joel-gugger.jpg';
 import eric from '../assets/employees/thimoo-eric-monnier.jpg';
-//import needYou from '../assets/employees/we-need-you.jpg';
+import needYou from '../assets/employees/we-need-you3.jpg';
 import './Contact.css';
 
 var employees = [
@@ -38,13 +38,13 @@ var employees = [
     description: "<p>Eric Monnier</p>",
     visibility:false
   },
-  /*{
+  {
     img: needYou,
     name: 'Vous',
     info1: 'Développeur Full Stack',
-    info2: 'août 2017 (50%)',
-    link: 'https://medium.com/@thimoo.ch/d%C3%A9veloppeur-full-stack-50-fcbf520c9fcc'
-  }*/
+    info2: '(~50%)',
+    link: 'https://medium.com/@thimoo.ch/d%C3%A9veloppeur-euse-fullstack-50-59136596413f'
+  }
 ];
 
 const listEmployees = employees.map((employee) => {
@@ -93,7 +93,7 @@ class Contact extends Component {
               </div>
               <div className="Contact-Info__Map">
                 <a target="_blanck"
-                  href="https://www.google.ch/maps/place/thimoo/@47.019962,7.0293476,15z/data=!4m5!3m4!1s0x0:0x1a91cecc8c2535a!8m2!3d47.019962!4d7.0293476">
+                  href="https://www.google.ch/maps/place/thimoo/@47.0945314,7.1258794,17z/data=!3m1!4b1!4m5!3m4!1s0x478e0ec7a5bc22bb:0x1a91cecc8c2535a!8m2!3d47.0945278!4d7.1280681">
                   <ScrollOverPack replay={true} playScale="0.1">
                     <QueueAnim key="1">
                       <MtSvgLines key="1" animate={ true } duration={ 2000 }>

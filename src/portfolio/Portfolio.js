@@ -90,7 +90,7 @@ class Portfolio extends Component {
             title="Rdv The App"
             text="Application mobile RDV The App : Développement d’une application mobile pour accompagner la lecture du guide RDV The Book, à l’aide de vidéos, d’audios, de témoignages, d’images et de beaucoup d’autres contenus."
             buttonText="Découvrir le projet"
-            buttonSrc="https://medium.com/@thimoo.ch/jardin-closel-bourbon-42d852c6cae5" />
+            buttonSrc="https://medium.com/@thimoo.ch/rdv-the-app-5d5f8c96ca01" />
           <Project
             classes="Azan"
             imgSrc={azan}

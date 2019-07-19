@@ -13,7 +13,7 @@ class Politiquedeconfidentialite extends Component {
       <section id="Politiquedeconfidentialite" className={"Politiquedeconfidentialite" + (this.props.isOpen ? " is-open" : "")}>
         <div className="Politiquedeconfidentialite-Content">
           <h2>Qui sommes-nous&nbsp;?</h2>
-          <p>Nicolas Frei thimoo<br />Closel Bourbon 3<br />2075 Thielle-Wavre<br />L’adresse de notre site Web est&nbsp;: https://www.thimoo.ch.</p>
+          <p>Nicolas Frei thimoo<br />Sur le Souhait 17<br />2515 Prêles<br />L’adresse de notre site Web est&nbsp;: https://www.thimoo.ch.</p>
           <h2>Utilisation des données personnelles collectées</h2>
           <p>La mise à disposition de données personnelles peut être exigée par la loi ou résulter de règlementations contractuelles. Pour conclure un contrat, nous sommes par exemple obligés de recueillir et traiter des données personnelles. Dans le cas contraire, aucun contrat ne pourrait être conclu. </p>
           <h3>Cookies</h3>
