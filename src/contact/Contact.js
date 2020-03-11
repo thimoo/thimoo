@@ -6,9 +6,10 @@ import MtSvgLines from 'react-mt-svg-lines';
 import Politiquedeconfidentialite from '../politiquedeconfidentialite/politiquedeconfidentialite.js';
 // import Modal from 'react-awesome-modal';
 
-import nico from '../assets/employees/thimoo-nico-frei.jpg';
-// import joel from '../assets/employees/thimoo-joel-gugger.jpg';
-import eric from '../assets/employees/thimoo-eric-monnier.jpg';
+import nico from '../assets/employees/nicolas.jpg';
+import joel from '../assets/employees/joel.jpg';
+import william from '../assets/employees/william.jpg';
+import eric from '../assets/employees/eric.jpg';
 import needYou from '../assets/employees/we-need-you3.jpg';
 import './Contact.css';
 
@@ -16,35 +17,38 @@ var employees = [
   {
     img: nico,
     name: 'Nicolas Frei',
-    info1: 'Communication &',
-    info2: 'Design',
-    link: null,
-    description: "<p>Nicolas Frei</p>",
-    visibility:false
-  },
-  /*{
-    img: joel,
-    name: 'Joël Gugger',
-    info1: 'Web &',
-    info2: 'Développement',
+    info1: 'Communication & design',
+    info2: 'Ingénieur des médias',
     link: null
-  },*/
+  },
   {
     img: eric,
     name: 'Eric Monnier',
-    info1: 'Web &',
-    info2: 'Développement',
-    link: null,
-    description: "<p>Eric Monnier</p>",
-    visibility:false
+    info1: 'Développement web',
+    info2: 'Technicien ES',
+    link: null
   },
   {
-    img: needYou,
-    name: 'Vous',
-    info1: 'Développeur Full Stack',
-    info2: '(~50%)',
-    link: 'https://medium.com/@thimoo.ch/d%C3%A9veloppeur-euse-fullstack-50-59136596413f'
-  }
+    img: joel,
+    name: 'Joël Gugger',
+    info1: 'Architecture web',
+    info2: 'Ingénieur TIC',
+    link: null
+  },
+  {
+    img: william,
+    name: 'William Giroux',
+    info1: 'Interactive media designer',
+    info2: 'Apprenti',
+    link: null
+  },
+  // {
+  //   img: needYou,
+  //   name: 'Vous',
+  //   info1: 'Développeur Full Stack',
+  //   info2: '(~50%)',
+  //   link: 'https://medium.com/@thimoo.ch/d%C3%A9veloppeur-euse-fullstack-50-59136596413f'
+  // }
 ];
 
 const listEmployees = employees.map((employee) => {
